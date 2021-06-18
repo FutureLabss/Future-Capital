@@ -67,6 +67,21 @@
 /* Medium devices (landscape tablets, 768px and up)*/
 @media only screen and (min-width: 600px) {
 
+    .manny:hover {
+        border-style: solid;
+        border-bottom-color: rgb(255, 153, 0);
+        border-left-color: rgb(255, 153, 0);
+        border-right-color: rgb(255, 153, 0);
+        border-top-color: rgb(255, 153, 0);
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+
+    .manny {
+        margin-top: 112px;
+    
+    }
+
     #screen-name {
         display: none;
     }
@@ -169,6 +184,10 @@
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+
+    .number, .address {
+        margin-top: 60px;
+    } 
 
     #card-box {
         border-radius: 35px !important;
@@ -284,9 +303,17 @@
     }
 
     .manny {
-        position: relative;
-        bottom: 20px;
+        margin-top: 97px;
     }
+
+    .manny:hover {
+        border-style: solid;
+        border-bottom-color: rgb(255, 153, 0);
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-style: hidden;
+    }
+
 
     .normal {
         position: relative;
@@ -299,7 +326,7 @@
     }
 
     #screen-name {
-        margin-left: 233px;
+        margin-left: 200px;
         color: rgb(255, 153, 0);
     }
 
@@ -309,6 +336,11 @@
         background-color: rgb(119, 118, 118);
         border-radius: 10%;
         display: inline-block;
+    }
+
+    .work {
+        padding-bottom: 89px;
+        padding-right: 35px;
     }
 
 }
@@ -366,20 +398,9 @@
 }
 
 
-.manny {
-    margin-top: 112px;
 
-}
 
-.manny:hover {
-    border-style: solid;
-    border-bottom-color: rgb(255, 153, 0);
-    border-left-color: rgb(255, 153, 0);
-    border-right-color: rgb(255, 153, 0);
-    border-top-color: rgb(255, 153, 0);
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
+
 
 .same:active {
     box-shadow: 10px 0 5px -2px rgb(49, 48, 48);
@@ -387,6 +408,18 @@
 
 
 #settings {
+    border-bottom-color: rgb(255, 153, 0);
+}
+
+#convert {
+    border-bottom-color: rgb(255, 153, 0);
+}
+
+#accounts {
+    border-bottom-color: rgb(255, 153, 0);
+}
+
+#transactions {
     border-bottom-color: rgb(255, 153, 0);
 }
 
@@ -404,6 +437,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
 
 .same-last {
     height: 85px;
@@ -432,6 +466,10 @@ input {
 }
 
 
+
+
+
+/* Justin's css ends here! */
 
 
 
@@ -495,6 +533,48 @@ height: 52px;
         margin: -40px;
       }
   }
+
+
+  .block {
+    display: block;
+    width: 25%;
+    background: linear-gradient(94.91deg, #FF9900 18.76%, rgba(255, 184, 0, 0.79) 101.16%);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+   border-radius: 30px;
+    margin-left: 270px;
+    margin-top: -20px;
+  }
+  .mac{
+     margin-left: -30px;
+    
+     width: 1072px;
+height: 52px;
+  }
+  @media only screen and (max-width: 600px) {
+      .block{
+        position: relative;
+        right: 120px;
+        text-align: center;
+        width: 50%;
+        margin-top: -20px;
+        margin-left: 200px;
+        
+      }
+      .mac{
+          position: absolute;
+          margin-left: 2px;
+          margin-top: 10px;
+      }
+      .khd{
+          position: absolute;
+          margin-left: 30px;
+         
+      }
+  }
+   
    
 
 

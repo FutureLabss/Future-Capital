@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-convert.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>FUTURE CAPITAL</title>
+    <title>Trello3</title>
   </head>
   <body>
 
@@ -23,7 +24,7 @@
                 
                 
                 <div class="one-man text-center" id="settings fixed-top">
-                    <a href="index.html" class="no-box" style="text-decoration: none;">
+                    <a href="convert.html" class="no-box" style="text-decoration: none;">
                     <div class="two" id="settings" >
                         <img src="https://res.cloudinary.com/not-set/image/upload/v1623155917/futurelabs/Group_28_tpsnfv.png" alt="">
                     </div>
@@ -45,7 +46,7 @@
                 
                 
                 <div class="text-center same">
-                    <a href="trasactions.html" class="no-box" style="text-decoration: none;">
+                    <a href="transactions.html" class="no-box" style="text-decoration: none;">
                     <div class="normal1 pt-3 well">
                         <img src="https://res.cloudinary.com/not-set/image/upload/v1623155272/futurelabs/Group_45_soxqef.png" alt="">
                         <h5 class="sidetext ">Transactions</h5>
@@ -53,14 +54,14 @@
                     </a>
                 </div>
 
-                <div class="same text-center " >
+                <div class="same text-center work">
                     <a href="settings.html" class="no-box" style="text-decoration: none;">
-                    <div class="normal2 pt-3">
-                        <img src="Group 30 1.png" alt="">
-                        <h5 class="sidetext ">Settings</h5>
-                    </div>
-                    </a>
-                </div>
+                      <div class="normal2 pt-3">
+                          <img src="Group 30 1.png" alt="">
+                          <h5 class="sidetext">Settings</h5>
+                      </div>
+                    </a>  
+                  </div>
 
                 <div class="same text-center">
                     <div class="normal3 pt-3">
@@ -82,6 +83,18 @@
 
 
         <div class="container main rounded pb-1 shadow-lg p-3 mb-5 bg-body rounded" id="card-box">
+
+
+            <div class="container" id="screen-name">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div><h5><strong><span class="dot2"></span> Convert</strong></h5></div>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div class="row ml-4" id="row2">
                 <div class="col-md-2 col-sm-12">
                     <div class="avatar">
@@ -93,16 +106,18 @@
                     </div>
                 </div>
             </div>
-        <div class="p-3 mb-2 bg-warning text-dark w-75 ml-5 text-center mt-3 ">Complete Your KYC verification</div>
+        <div class="p-3 mb-2 bg-warning text-dark w-75 ml-5 text-center mt-3">Complete Your KYC verification</div>
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="card  mt-4 shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem; margin-left: 30px; ">
+                    <div class="card  mt-4 shadow-lg p-3 mb-5 bg-white rounded h-75 khds" style="width: 18rem; margin-left: 30px;  ">
                         <div class="card-body">
                             <div class="input-group">
-                                <input type="text" class="form-control"  >
+                               
                                 <div class="input-group-append">
-                                  <span class="input-group-text">$ USD</span>
+                                  <div class=" w-100 h-100" >
+                                    <p class="ds text-muted" style="font-size: 20px; font-weight: bolder; margin-top: 30px">NGN: <span id="outputKPH" ></span></p>
+                                  </div>
                                  
                                 </div>
                               </div>
@@ -111,12 +126,13 @@
             </div>
             
                 <div class="col-md-5">
-                    <div class="card mt-4 shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem; margin-left: 30px;">
+                    <div class="card mt-4 shadow-lg p-3 mb-5 bg-white rounded h-75 khd" style="width: 18rem; ">
                         <div class="card-body">
                             <div class="input-group">
-                                <input type="text" class="form-control" >
+                               
+                                <input  id="inputMPH" placeholder="USD" style="font-size: 20px; font-weight: bolder; margin-top: 30px;" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)"> 
                                 <div class="input-group-append">
-                                  <span class="input-group-text"> ₦ NGN</span>
+                                
                                  
                                 </div>
                               </div>
@@ -124,7 +140,8 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="block">Continue </button>
+        
+        <a class="block" href="index.html">Continue</a>
     </div>
         </div>
            
@@ -148,6 +165,9 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementsByClassName("main").style.marginLeft= "0";
+    }
+    function speedConverter(valNum) {
+      document.getElementById("outputKPH").innerHTML=valNum*400;
     }
 </script>
 
