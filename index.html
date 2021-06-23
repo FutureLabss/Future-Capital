@@ -23,7 +23,6 @@
             <div class="contain-content">
                 
                 
-                
                 <div class="one-man text-center">
                     <a href="convert.html" class="no-box" style="text-decoration: none;">
                     <div class="two">
@@ -36,6 +35,8 @@
                     </a>
                 </div>
                 
+                
+                
                 <div class="text-center same">
                     <a href="accounts.html" class="no-box" style="text-decoration: none;">
                     <div class="normal pt-4 well">
@@ -44,6 +45,7 @@
                     </div>
                     </a>
                 </div>
+            
                 
                 
                 <div class="text-center same">
@@ -89,8 +91,7 @@
                         <!-- <img src="https://res.cloudinary.com/not-set/image/upload/v1623155917/futurelabs/Group_28_tpsnfv.png" alt=""> -->
                     </div> 
 
-                    <!-- <img src="https://res.cloudinary.com/not-set/image/upload/v1623079701/futurelabs/Ellipse_15_xlcora.png" alt=""> -->
-                    <!-- <p class="pa">Welcome, Annointing Triumph</p> -->
+                    
                 </div>
             </div>
         </container>
@@ -131,6 +132,7 @@
 
             <div class="row ml-4 pt-4" id="row3">
 
+                
                 <div class="col-md-3 rounded name">
                     <h4 class="profile2">First name</h4>
                     <p class="para2">Your first name here</p>
@@ -149,6 +151,8 @@
                    <input type="text"  class=""> 
                 </div>
 
+            
+
             </div>
 
             
@@ -163,7 +167,8 @@
                 <div class="col-md-3 rounded address number">
                     <h4 class="profile2">Email</h4>
                     <p class="para2">We'll not pester you there</p>
-                    <input type="email" name="hh" placeholder="mark@gmail.com">
+                    <input type="email" name="hh" placeholder="mark@gmail.com" id="myInput">
+                    <p id="text">Turn OFF Caps lock.</p>
                    <!-- <input type="text"  class="">  -->
                 </div>
 
@@ -180,7 +185,7 @@
 
         
             
-            <button type="button" class="btn btn-warning btn-lg btn-block mt-3 finish .. shadow-lg bg-white rounded"><strong>Save</strong></button>
+            <button type="button" class=" button btn btn-warning btn-lg btn-block mt-3 finish .. shadow-lg bg-white rounded"><strong>Save</strong></button>
             
         </div> 
         
@@ -205,6 +210,20 @@
       document.getElementById("mySidenav").style.width = "0";
       document.getElementsByClassName("main").style.marginLeft= "0";
     }
+</script>
+
+
+<script>
+    var input = document.getElementById("myInput");
+    var text = document.getElementById("text");
+    input.addEventListener("keyup", function(event) {
+    
+    if (event.getModifierState("CapsLock")) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none"
+      }
+    });
 </script>
 
 <!--<script>
