@@ -4,240 +4,233 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styleindex.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Future Capital</title>
+
+    <title>FutureFX</title>
   </head>
   <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-warning" href="#"><strong class="ml-5">Future Capital</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-warning" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-warning mr-5">
+            <a class="nav-item nav-link active text-warning" href="sign-in.html">Sign in <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-warning" href="#">Signup</a>
+            <a class="nav-item nav-link text-warning" href="dashboard.html">Dashboard</a>
+            <a class="nav-item nav-link text-warning" href="#">Blog</a>
+          </div>
+        </div>
+      </nav>
 
-    <section class="bulk">
-
-        <span style="font-size:30px;cursor:pointer" class="ex" onclick="openNav()">&#9776;</span>
-
-        <div id="mySidenav" class="contain">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="contain-content">
+      <section id="hero" class="text-center">
+          <div class="container">
+              <div class="row">
+              <div class="col-sm-12">
+    <h1 class="oneclick">Future FX</h1>
+    <p class="hero">Buy and sell local and foreign currencies at the best market rates with ZERO CHARGES.</p></div></div>
+                <div class="row  no-gutters  align-items-center">
+                    <div class="col">
+    
+                        <input class="no-border" type="number"  id="f" placeholder="" onkeyup="convert('F')"></div>
+                        <div class="col-sm-auto"><img src="https://res.cloudinary.com/not-set/image/upload/v1624630624/futurelabs/Group_17_1_m41y1q.png" class=""></div>  
+                          <div class="col"><input class="no-border" type="number" id="c" placeholder="" onkeyup="convert('C')" >
                 
-                
-                <div class="one-man text-center">
-                    <a href="convert.html" class="no-box" style="text-decoration: none;">
-                    <div class="two">
-                        <img src="https://res.cloudinary.com/not-set/image/upload/v1623155917/futurelabs/Group_28_tpsnfv.png" alt="">
-                    </div>
-                    <div class="manny pt-3 well">
-                        <img src="https://res.cloudinary.com/not-set/image/upload/v1623153917/futurelabs/Group_29_xbbaqf.png" alt="">
-                        <h5 class="sidetext">Convert</h5>
-                    </div>
-                    </a>
-                </div>
-                
-                
-                
-                <div class="text-center same">
-                    <a href="accounts.html" class="no-box" style="text-decoration: none;">
-                    <div class="normal pt-4 well">
-                        <img src="https://res.cloudinary.com/not-set/image/upload/v1623154793/futurelabs/Wallet_a2hu7z.png" alt="">
-                        <h5 class="sidetext">Accounts</h5>
-                    </div>
-                    </a>
-                </div>
-            
-                
-                
-                <div class="text-center same">
-                    <a href="transactions.html" class="no-box" style="text-decoration: none;">
-                    <div class="normal1 pt-3 well">
-                        <img src="https://res.cloudinary.com/not-set/image/upload/v1623155272/futurelabs/Group_45_soxqef.png" alt="">
-                        <h5 class="sidetext ">Transactions</h5>
-                    </div>
-                    </a>
-                </div>
-
-                <div class="same text-center" id="settings">
-                    <div class="normal2 pt-3">
-                        <img src="https://res.cloudinary.com/not-set/image/upload/v1623155360/futurelabs/Group_30_1_gbbbva.png" alt="">
-                        <h5 class="sidetext settings">Settings</h5>
-                    </div>
-                </div>
-
-                <div class="same text-center">
-                    <div class="normal3 pt-3">
-                        <img src="https://res.cloudinary.com/not-set/image/upload/v1623155406/futurelabs/Group_33_vyxf7l.png" alt="">
-                        <h5 class="sidetext">Log out</h5>
-                    </div>
-                </div>
-
-                <div class="same-last text-center">
-                    <!-- Nothing here -->
-                </div>
-
+            </div></div>
+    </div>
+    <button class="orange">Get Started</button>
+              </div>
+</div>
+</section>
+<section id="why">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="capital text-center">Why Future Capital</h1>
             </div>
         </div>
+        <div class="row">
+            
+            <div class="col-sm-6">
+<img src="https://res.cloudinary.com/not-set/image/upload/v1624631451/futurelabs/Group_56_d4yzuf.png" class="padup">   
+            </div>
+            <div class="col-sm-6">
+                <h2 class="whyus">Transparent & High Rates</h2>
+                <p class="whydesc">No hidden charges, we will try to charge<br> as low as possible and indicate it upfront</p>
+            </div>
+            
+                            <div class="col-sm-6">
+                                <h2 class="whyus">Fast & Secure</h2>
+                                <p class="whydesc">We are one-click exchange platfrom because<br> we provide the easiest and quickest online<br> transaction platform</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="https://res.cloudinary.com/not-set/image/upload/v1624631417/futurelabs/Group_57_ntpihs.png" class="padup">   
+                                            </div>
+            
+        </div></div></section>
 
         
-        <!-- Comment the image in this container! -->
-        <container>
-            <div class="row justify-content-end" id="size">
-                <div class="col-md-6 col-sm-12 mt-2 rounded">
-                    <div class="top-avatar">
-                        <h2><strong>Future Capital <sup><span class="dot"></span></sup></strong></h2>
+        <section id="how">
 
-                        <hr style="background-color: rgb(255, 153, 0); height: 0.2rem; width: 10rem;">
-
-                        <!-- <img src="https://res.cloudinary.com/not-set/image/upload/v1623155917/futurelabs/Group_28_tpsnfv.png" alt=""> -->
-                    </div> 
-
-                    
-                </div>
+            <div class="container">
+                
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="https://res.cloudinary.com/not-set/image/upload/v1624631860/futurelabs/Group_60_qs8u1u.png"> </div> 
+               
+                
+                <img src="https://res.cloudinary.com/not-set/image/upload/v1624659021/futurelabs/Group_61_xouyei.png" >  
+                    <h3 class="steps pt-3">Select Currency</h3>
+                    <p class="whydesc">Get paid </p>
+                
             </div>
-        </container>
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="https://res.cloudinary.com/not-set/image/upload/v1624631954/futurelabs/Group_55_ecclcz.svg"> </div> 
+                <img src="https://res.cloudinary.com/not-set/image/upload/v1624659015/futurelabs/Group_62_uxbvh9.png">
+                
+                    <h3 class="steps pt-3">Select Payment Method</h3>
+                    <p class="whydesc">Choose preferred payment method </p>
+                
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="https://res.cloudinary.com/not-set/image/upload/v1624632060/futurelabs/Group_70_kx3o1v.png"> </div> 
+                
+                <img src="https://res.cloudinary.com/not-set/image/upload/v1624659007/futurelabs/Group_63_bwyoai.png">                
+                    <h3 class="steps">Get Paid</h3>
+                    <p class="whydesc">Select your available currency</p>
+                
+            </div>
+            <!-- <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div> -->
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="orange mb-4">Get Started</button>
+            </div>
+        </div>
+        
+    </div></div>
+</section>
 
+<section id="payoneer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="capital text-center" style="color: white;">Easy Payoneer Exchange</h1>
+                <p class="text-center rose">Got Payoneer? we are buying at 470, instant settlement, via WhatsApp, no charges</p>
+            </div> </div>
+            <div class="container ">
+            
+            <div class="row no-gutters start-items-center">
+                
+               
+                
+                    <div class="offset-sm-2 col-sm-auto card2">
+                        <div class="card1">
 
+                        <img src="https://restcountries.eu/data/usa.svg"  alt="USD" width="30" height="30">
+                        <h1 class="capital">USD</h1>
+                        
+                        <form class="grey">
+                            <input class="no-border" type="number"  id="b" placeholder="" onkeyup="convert('b')">
+                    </form>
+                    </div></div>
+                
+            
+           
+             <div class="col-sm-auto align-self-center"> <img class="card3" src="https://res.cloudinary.com/not-set/image/upload/v1624630624/futurelabs/Group_17_1_m41y1q.png"> </div>  
+            
+            
+                <div class="col-sm-4 card2">
+                    <div class="card1">
+                    <img src="https://restcountries.eu/data/nga.svg" alt="USD" width="30" height="30">
+                    <h1 class="capital">Naira</h1>
+                   
+                    <form class="grey">
+                        <input class="no-border" type="number" id="a" placeholder="" onkeyup="convert('a')" >
+                </form>
+               
+            
+        </div>
+        </div></div>
+       <div class="text-center"><button class="orange text-center">WhatsApp</button></div></div> 
+       
    
+</section>
 
-
-
-        <div class="container main pb-1 shadow-lg p-3 mb-5 bg-white rounded" id="card-box">
-
-            <div class="container" id="screen-name">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div><h5><strong><span class="dot2"></span> Settings</strong></h5></div>
-                    </div>
-                </div>
-            </div>
-
-    
-            <div class="secondary-bulk">
-
-                
-            <div class="row ml-4" id="row2">
-                <div class="col-md-2 col-sm-12">
-                    <div class="avatar">
-                      <img src="https://res.cloudinary.com/not-set/image/upload/v1623073947/futurelabs/Ellipse_17_hyqqju.png" alt="">
-                    </div>
-                    <div class="data">
-                      <h4 class="profile">Profile picture</h4>
-                      <p class="para">Choose a photo to use as your avatar</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-100"></div>
-
-
-            <div class="row ml-4 pt-4" id="row3">
-
-                
-                <div class="col-md-3 rounded name">
-                    <h4 class="profile2">First name</h4>
-                    <p class="para2">Your first name here</p>
-                   <input type="text"  class=""> 
-                </div>
-
-                <div class="col-md-3 rounded number" id="midd">
-                    <h4 class="profile2">Middle name</h4>
-                    <p class="para2">Your middle name here</p>
-                   <input type="text"  class=""> 
-                </div>
-
-                <div class="col-md-3 rounded address">
-                    <h4 class="profile2">Last name</h4>
-                    <p class="para2">Your last name here</p>
-                   <input type="text"  class=""> 
-                </div>
-
-            
-
-            </div>
-
-            
-            <div class="row ml-4 mt-5" id="row4">
-
-                <div class="col-md-3 rounded" id="midd">
-                    <h4 class="profile2">Phone number</h4>
-                    <p class="para2">Lets talk in your journey with us</p>
-                   <input type="text"  class="" placeholder="+234"> 
-                </div>
-
-                <div class="col-md-3 rounded address number">
-                    <h4 class="profile2">Email</h4>
-                    <p class="para2">We'll not pester you there</p>
-                    <input type="email" name="hh" placeholder="mark@gmail.com" id="myInput">
-                    <p id="text">Turn OFF Caps lock.</p>
-                   <!-- <input type="text"  class="">  -->
-                </div>
-
-                <div class="col-md-3 rounded number">
-                    <h4 class="profile2">Postal Adresss</h4>
-                    <p class="para2">We may send you dollars</p>
-                   <input type="text" class="" placeholder="P.O Box"> 
-                </div>
-
-            </div>
-
-            <!-- secondary-bulk closing tag -->
-            </div> 
-
-        
-            
-            <button type="button" class=" button btn btn-warning btn-lg btn-block mt-3 finish .. shadow-lg bg-white rounded"><strong>Save</strong></button>
-            
-        </div> 
-        
-        
-    </section>
-
-    
-
-
-    
-
+<section id="newsletter">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <p class="news">Get Daily Currency Updates and Investment Tips in Your Inbox</p>
+            <form>
+                <div class="form-group text-center">
+                  
+                  <input class="down" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+                 
+                </div></form>
+                <button class="orange">Join US</button>
+        </div>
+    </div>
+</div>
 
 </section>
 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="https://res.cloudinary.com/not-set/image/upload/v1624632410/futurelabs/future_capital_logo_oxnfld.png"> 
+            </div>
+            <div class="col-sm-4">
+                
+            </div>
+            <div class="col-sm-4">
+                <p class="small2">Email</p>
+                <div class="line"></div>
+                <p class="email">Hello@FutureFX.Africa</p>
+                <p class="small2">Address</p>
+                <div class="line"></div>
+                <p class="email">3 Chubb Road Ikot Ekpene, Akwa Ibom State</p>
+            </div>
+        </div>
+    </div>
+</footer>
 <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementsByClassName("main").style.marginLeft = "250px";
-    }
+      function convert(degree) {
+  var x;
+  if (degree == "C") {
+    x = document.getElementById("c").value /475;
+    document.getElementById("f").value = (x);
+  } else {
+    x = document.getElementById("f").value  *475;
     
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementsByClassName("main").style.marginLeft= "0";
-    }
+    document.getElementById("c").value = (x);
+  } 
+}
+</script>
+<script>
+function convert(degree) {
+  var x;
+  if (degree == "a") {
+    x = document.getElementById("a").value /475;
+    document.getElementById("b").value = (x);
+  } else {
+    x = document.getElementById("b").value  *475;
+    document.getElementById("a").value = (x);
+  } 
+}
 </script>
 
-
-<script>
-    var input = document.getElementById("myInput");
-    var text = document.getElementById("text");
-    input.addEventListener("keyup", function(event) {
-    
-    if (event.getModifierState("CapsLock")) {
-        text.style.display = "block";
-      } else {
-        text.style.display = "none"
-      }
-    });
-</script>
-
-<!--<script>
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-</script>-->
-
-
-    <!-- <h1>Hello, world!</h1> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
