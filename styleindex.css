@@ -292,6 +292,12 @@ color: #CFCFCF;
 }
 
 
-
 /* DASHBOARDONECSS */
+
+/* Justin's css begins below! */
+
+input:hover {
+    border-color: #F0C911;
+    border-style: 10px solid;
+}
 

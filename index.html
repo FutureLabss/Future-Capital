@@ -37,9 +37,9 @@
                 <div class="row  no-gutters  align-items-center">
                     <div class="col">
     
-                        <input class="no-border" type="number"  id="f" placeholder="" onkeyup="convert('F')"></div>
+                        <input class="no-border change" type="number"  id="f" placeholder="NGN" onkeyup="convert('F')"></div>
                         <div class="col-sm-auto"><img src="https://res.cloudinary.com/not-set/image/upload/v1624630624/futurelabs/Group_17_1_m41y1q.png" class=""></div>  
-                          <div class="col"><input class="no-border" type="number" id="c" placeholder="" onkeyup="convert('C')" >
+                          <div class="col"><input class="no-border change" type="number" id="c" placeholder="USD" onkeyup="convert('C')" >
                 
             </div></div>
     </div>
@@ -218,18 +218,8 @@
   } 
 }
 </script>
-<script>
-function convert(degree) {
-  var x;
-  if (degree == "a") {
-    x = document.getElementById("a").value /475;
-    document.getElementById("b").value = (x);
-  } else {
-    x = document.getElementById("b").value  *475;
-    document.getElementById("a").value = (x);
-  } 
-}
-</script>
+
+
 
 
     <!-- Optional JavaScript -->
